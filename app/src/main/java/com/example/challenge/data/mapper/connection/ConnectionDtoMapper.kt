@@ -5,8 +5,8 @@ import com.example.challenge.domain.model.connection.GetConnection
 
 fun ConnectionDto.toDomain() =
     GetConnection(
-        avatar = avatar,
-        email = email,
+        avatar = avatar ?: "",
+        email = email ?: "",
         id = id,
         fullName = firstName.plus(" ").plus(lastName)
     )

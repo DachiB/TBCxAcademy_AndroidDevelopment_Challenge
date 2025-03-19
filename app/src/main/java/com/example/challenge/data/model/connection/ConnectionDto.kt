@@ -4,10 +4,10 @@ import com.squareup.moshi.Json
 
 data class ConnectionDto(
     val id: Int,
-    val avatar: String,
-    val email: String,
+    val avatar: String? = null,
+    val email: String? = null,
     @Json(name = "first_name")
-    val firstName: String,
+    val firstName: String? = null,
     @Json(name = "last_name")
-    val lastName: String
+    val lastName: String? = null
 )

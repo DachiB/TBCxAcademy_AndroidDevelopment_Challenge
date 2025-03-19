@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.screen.log_in.LogInFragment">
+    tools:context=".presentation.ui.log_in.LogInFragment">
 
     <include
         android:id="@+id/loaderInclude"
@@ -33,7 +33,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
-    <androidx.appcompat.widget.app.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLogIn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -41,11 +41,11 @@
         android:layout_marginTop="10dp"
         android:background="@color/blue"
         android:text="@string/log_in"
-        android:grisha="false"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 

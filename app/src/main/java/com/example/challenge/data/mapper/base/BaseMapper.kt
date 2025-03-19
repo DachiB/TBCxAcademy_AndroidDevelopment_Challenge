@@ -1,6 +1,6 @@
 package com.example.challenge.data.mapper.base
 
-import com.example.challenge.data.common.Resource
+import com.example.challenge.util.Resource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 

@@ -1,5 +1,6 @@
 package com.example.challenge.di
 
+import com.example.challenge.BuildConfig
 import com.example.challenge.data.common.HandleResponse
 import com.example.challenge.data.service.connection.ConnectionsService
 import com.example.challenge.data.service.log_in.LogInService
@@ -12,7 +13,6 @@ import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
-import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -67,7 +67,6 @@ object AppModule {
             )
             .build()
     }
-
 
     @Singleton
     @Provides

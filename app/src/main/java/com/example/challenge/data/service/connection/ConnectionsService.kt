@@ -7,5 +7,5 @@ import retrofit2.http.GET
 interface ConnectionsService {
     @GET("34735e57-9a1f-4e12-b35a-34fd8462b0de")
     suspend fun getConnections(
-    ): Response<ConnectionDto>
+    ): Response<List<ConnectionDto>>
 }
